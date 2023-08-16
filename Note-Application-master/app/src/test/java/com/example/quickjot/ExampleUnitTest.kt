@@ -1,4 +1,4 @@
-package com.gtappdevelopers.noteapplication
+package com.example.quickjot
 
 import org.junit.Test
 

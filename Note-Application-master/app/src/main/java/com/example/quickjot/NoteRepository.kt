@@ -1,8 +1,6 @@
-package com.gtappdevelopers.noteapplication
+package com.example.quickjot
 
-import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
-import java.util.concurrent.Flow
 
 class NoteRepository(private val notesDao: NotesDao) {
 

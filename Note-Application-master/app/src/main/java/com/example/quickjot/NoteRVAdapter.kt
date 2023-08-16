@@ -1,4 +1,4 @@
-package com.gtappdevelopers.noteapplication
+package com.example.quickjot
 
 import android.content.Context
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package com.gtappdevelopers.noteapplication
+package com.example.quickjot
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

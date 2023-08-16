@@ -1,4 +1,4 @@
-package com.gtappdevelopers.noteapplication
+package com.example.quickjot
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
