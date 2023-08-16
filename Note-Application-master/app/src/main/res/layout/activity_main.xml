@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_shade_1"
+    android:background="@color/pastel"
     tools:context=".MainActivity">
 
     <!--recycler view for displaying all notes-->
@@ -24,8 +24,14 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="5dp"
         android:src="@drawable/ic_add"
-        app:backgroundTint="@color/black_shade_2"
+        app:backgroundTint="@color/brown"
         app:tint="@color/white" />
 
 </RelativeLayout>
