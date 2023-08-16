@@ -15,19 +15,15 @@ class NoteRVAdapter(
 ) :
     RecyclerView.Adapter<NoteRVAdapter.ViewHolder>() {
 
-    //on below line we are creating a variable for our all notes list.
     private val allNotes = ArrayList<Note>()
 
-    //on below line we are creating a view holder class.
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        //on below line we are creating an initializing all our variables which we have added in layout file.
         val noteTV = itemView.findViewById<TextView>(R.id.idTVNote)
         val dateTV = itemView.findViewById<TextView>(R.id.idTVDate)
         val deleteIV = itemView.findViewById<ImageView>(R.id.idIVDelete)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        //inflating our layout file for each item of recycler view.
         val itemView = LayoutInflater.from(parent.context).inflate(
             R.layout.note_rv_item,
             parent, false
@@ -36,18 +32,12 @@ class NoteRVAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //on below line we are setting data to item of recycler view.
         holder.noteTV.setText(allNotes.get(position).noteTitle)
         holder.dateTV.setText("Обновлено : "+allNotes.get(position).timeStamp)
-        //on below line we are adding click listner to our delete image view icon.
         holder.deleteIV.setOnClickListener {
-            //on below line we are calling a note click interface and we are passing a position to it.
             noteClickDeleteInterface.onDeleteIconClick(allNotes.get(position))
         }
-
-        //on below line we are adding click listner to our recycler view item.
         holder.itemView.setOnClickListener {
-            //on below line we are calling a note click interface and we are passing a position to it.
             noteClickInterface.onNoteClick(allNotes.get(position))
         }
     }
